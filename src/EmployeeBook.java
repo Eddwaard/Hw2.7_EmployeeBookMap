@@ -135,7 +135,7 @@ public class EmployeeBook {
         Employee employee = new Employee(name, surname, patronymic, 1, 1);
         employee = employees.get(employee.hashCode());
         if (employee == null) {
-            throw new IllegalArgumentException("Такого сотрудника не существует");
+            throw new IllegalArgumentException("Такого сотрудника не существует!");
         }
         return employee;
     }
